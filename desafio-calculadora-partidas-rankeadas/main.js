@@ -6,18 +6,18 @@ function calculadoraRank(vic, der) {
             var rank = "Bronze";
         } else if (t > 21 && t < 50){
             var rank = "Prata";
-        } else if (t > 21 && t < 50){
+        } else if (t > 51 && t < 80){
             var rank = "Ouro";
-        } else if (t > 21 && t < 50){
+        } else if (t > 81 && t < 90){
             var rank = "Diamante";
-        } else if (t > 21 && t < 50){
+        } else if (t > 91 && t < 100){
             var rank = "Lendário";
-        } else if (t > 21 && t < 50){
+        } else if (t > 101){
             var rank = "Imortal";
         } else{
-            console.log("Valores inválidos!");s
+            console.log("Valores inválidos!");
         }
-    return console.log(`Ò Herói tem de saldo de ${t} está no nível de ${rank}`);
+    return console.log(`O Herói tem de saldo de ${t} vitórias e está no nível de ${rank}`);
 }
 
-calculadoraRank(35,2);
+calculadoraRank(105,23);
